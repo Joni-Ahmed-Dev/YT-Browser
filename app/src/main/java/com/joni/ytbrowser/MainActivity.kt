@@ -167,7 +167,6 @@ class MainActivity : ComponentActivity() {
     override fun onDestroy() {
         webView.stopLoading()
         webView.webChromeClient = null
-        webView.webViewClient = null
         webView.destroy()
         super.onDestroy()
     }
